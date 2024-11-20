@@ -11,7 +11,10 @@ export default {
       colors: {
         background: "var(--background)",
         foreground: "var(--foreground)",
+        bluesky: "#0270AC",
+        greenlight: "#6FF9B9",
       },
+      glass: {},
     },
   },
   plugins: [],
