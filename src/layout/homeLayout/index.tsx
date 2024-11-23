@@ -1,4 +1,5 @@
 import Navbar from "@/components/Navbar";
+import Head from "next/head";
 
 type PropsTypes = {
   children: React.ReactNode;
@@ -7,9 +8,14 @@ type PropsTypes = {
 export default function HomeLayout(props: PropsTypes) {
   const { children } = props;
   return (
-    <section className="flex p-3 m-4 flex-col flex-wrap">
-      <Navbar />
-      <main>{children}</main>
-    </section>
+    <>
+      <Head>
+        <title>{"Home"}</title>
+      </Head>
+      <section className="flex p-3 m-4 flex-col flex-wrap">
+        <Navbar />
+        <main>{children}</main>
+      </section>
+    </>
   );
 }
